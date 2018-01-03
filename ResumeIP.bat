@@ -1,0 +1,6 @@
+@echo off
+echo 正在修改IP地址和DNS服务器地址,请耐心等待…………
+echo 正在更改本机IP地址...
+netsh interface ipv4 set address name="Wi-Fi" source=dhcp gwmetric=0 >nul
+ipconfig /all
+pause
